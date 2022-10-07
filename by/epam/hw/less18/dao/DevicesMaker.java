@@ -12,7 +12,7 @@ import by.epam.hw.less18.entity.TabletPC;
 import by.epam.hw.less18.entity.VacuumCleaner;
 
 public class DevicesMaker {
-	public List<Device> makeDevice(List<String> dataAfterMatching) {
+	public List<Device> makeListOfDevices(List<String> dataAfterMatching) {
 		List<Device> devices = new ArrayList<Device>();
 
 		for (int i = 0; i < dataAfterMatching.size(); i++) {
