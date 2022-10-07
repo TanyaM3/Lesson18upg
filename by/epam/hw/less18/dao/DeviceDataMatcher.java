@@ -1,8 +1,8 @@
 package by.epam.hw.less18.dao;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 import by.epam.hw.less18.entity.criteria.Criteria;
 
 public class DeviceDataMatcher {
@@ -23,7 +23,6 @@ public class DeviceDataMatcher {
 				deviceDataResult.add(data);
 			}
 		}
-
 		return deviceDataResult;
 }
 		
@@ -42,8 +41,7 @@ public class DeviceDataMatcher {
 			if(!data.contains(pattern)){
 				return false;
 			}
-		}
-		
+		}		
 		return true;
 	}
 }
