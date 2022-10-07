@@ -27,6 +27,7 @@ public class DeviceReader {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		reader.close();
 		return devicesList;
 	}
 
@@ -44,6 +45,7 @@ public class DeviceReader {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		reader.close();
 		return devicesList;
 	}
 
