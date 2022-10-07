@@ -37,7 +37,7 @@ public class FindDeviceDAOImpl implements DeviceDAO {
 		List<String> dataAfterMatching = matcher.match();
 
 		DevicesMaker devicesMaker = new DevicesMaker();
-		devices = devicesMaker.makeDevice(dataAfterMatching);
+		devices = devicesMaker.makeListOfDevices(dataAfterMatching);
 
 		return devices;
 	}
