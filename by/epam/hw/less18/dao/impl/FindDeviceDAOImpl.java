@@ -12,12 +12,13 @@ import by.epam.hw.less18.entity.Device;
 import by.epam.hw.less18.entity.criteria.Criteria;
 
 public class FindDeviceDAOImpl implements DeviceDAO {
+	private String path = "devices.txt";
 
 	@Override
 	public List<Device> find(Criteria criteria) throws DAOException {
 		List<Device> devices = new ArrayList<Device>();
 		List<String> dataFromSource = null;
-		DeviceReader deviceReader = new DeviceReader("devices.txt");
+		DeviceReader deviceReader = new DeviceReader(path);
 		
 		if (criteria.getGroupSearchName() != null) {
 			try {
