@@ -32,6 +32,16 @@ public class FindDeviceDAOImpl implements DeviceDAO {
 			} catch (IOException e) {
 				throw new DAOException(e);
 			}
+			finally {
+				try {
+					if (reader != null) {
+						reader.close();
+					}
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 		}
 
 		DeviceDataMatcher matcher = new DeviceDataMatcher(dataFromSource, criteria);
